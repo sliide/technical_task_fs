@@ -23,8 +23,6 @@ We've provided a PostgreSQL database with a `categories` table containing:
 
 ### Technical Constraints
 - Use any frontend and backend technologies you're comfortable with
-- The application should be intuitive for non-technical users
-- Ensure data integrity (prevent circular references, handle edge cases)
 - Include proper error handling and validation
 
 ## AI Tool Usage
@@ -43,9 +41,8 @@ Create a file called `AI_USAGE.md` documenting your AI interaction approach.
 ## Submission Requirements
 
 ### Code Delivery
-- **DO NOT** push your solution to GitHub or any public repository
-- **ZIP** your entire project directory
-- **EMAIL** the ZIP file to your recruiter contact
+- **DO NOT** push your solution to our public GitHub repository
+- Feel free to create either your won repository as a fork or **ZIP** your entire project directory and**EMAIL** the file to the recruiter
 
 ### Documentation Requirements
 Your submission must include:
@@ -91,32 +88,9 @@ docker exec categories_postgres psql -U developer -d categories_db -c "SELECT * 
 docker exec -it categories_postgres psql -U developer -d categories_db
 ```
 
-## Evaluation Criteria
-
-### Technical Implementation (40%)
-- Code quality and organization
-- Proper error handling and validation
-- Database interaction and data integrity
-- UI/UX design and usability
-
-### Technology Choices (20%)
-- Appropriate stack selection for an internal tool
-- Justification of technology decisions
-- Effective use of chosen technologies
-
-### AI Integration (20%)
-- Thoughtful use of AI tools
-- Clear documentation of AI assistance
-- Evidence of understanding AI-generated code
-
-### Documentation & Setup (20%)
-- Clear, complete setup instructions
-- Good project documentation
-- Easy-to-follow deployment process
-
 ## Time Expectation
 
-This task should take approximately **4-8 hours** depending on your experience level and technology choices. Focus on creating a working solution rather than a perfect one.
+This task should take approximately **2-4 hours** depending on your experience level and technology choices. Focus on creating a working solution rather than a perfect one.
 
 ## Questions?
 

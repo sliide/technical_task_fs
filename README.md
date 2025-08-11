@@ -3,8 +3,6 @@
 ## CONGRATULATIONS! 
 ## You've reached the next stage, which is solving a Sliide practical test
 ________________________________________________________________________
-## Please ensure that you create a clone of this repo to share your solution with us
-________________________________________________________________________
 ## Overview
 
 You are tasked with building an internal tool (without external stakeholders or customers) for managing hierarchical categories. Digital content that we provide to the user gets tagged with these categories. This enables us to provide personalised content which matches a user's interests.
@@ -17,6 +15,7 @@ Our categories relate to each other in a way that allows a Parent category like 
 For Example:
 Bottom up:
 `World Cup -> Football -> Sport`
+
 Top Down:
 `Sport -> Football -> World Cup`
 
@@ -72,7 +71,7 @@ docker exec -it categories_postgres psql -U developer -d categories_db
 
 ### Code Delivery
 - **DO NOT** push your solution to our public GitHub repository
-- Feel free to create either your own repository as a fork or **ZIP** your entire project directory and**EMAIL** the file to our recruiter
+- Feel free to create either your own repository as a fork or **ZIP** your entire project directory and **EMAIL** the file to our recruiter
 
 ### Documentation Requirements
 Your submission must include:
@@ -82,9 +81,8 @@ Your submission must include:
         - Provide **complete setup instructions** - don't assume we have your tools installed
         - Try to make your setup as easy to use as possible (Docker, one-command setup, etc.)
         - Include any dependencies, environment variables, or configuration needed
-    - How to run the application
-    - Technology choices and reasoning
-    - Any assumptions made
+    - Details of how to run the application
+    - Your technology choices and reasoning. This can also include assumptions which you have made
 
 2. If you have decided to use AI, a **AI_USAGE.md** file with:
     - The key prompts which you used
@@ -106,4 +104,4 @@ Once we have received your task along with any other documentation which you fee
 
 If we like what we see, we'll invite you to join us on a call for a discussion where we’ll ask you to go through your task, explaining any decisions that you've made.
 
-Good luck!
+## Good luck!

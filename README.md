@@ -67,6 +67,10 @@ docker exec categories_postgres psql -U developer -d categories_db -c "SELECT * 
 docker exec -it categories_postgres psql -U developer -d categories_db
 ```
 
+### Additional notes
+For the purposes of example this database only has one parent category, whereas if this was a fully fledged application we'd have many. Try to think about how you could support
+such a scenario in your UI.
+
 ## Submission Requirements
 
 ### Code Delivery

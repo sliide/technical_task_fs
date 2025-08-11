@@ -1,23 +1,43 @@
 #  Full Stack Developer Technical Task
 
-## CONGRATULATIONS your onto our next stage, the Sliide practical tests!
+## CONGRATULATIONS! 
+## You've reached the next stage, which is solving a Sliide practical test
+________________________________________________________________________
+## Please ensure that you create a clone of this repo to share your solution with us
 ________________________________________________________________________
 ## Overview
 
-You are tasked with building an internal tool for managing hierarchical categories. Digital content that we provide to the user get's tagged with these categories to help us provide personalised content which matches what the user interests. At the moment we don't have many categories but we're hoping to expand to many more to be able to produce the best content feeds for our users. This is an internal-only application that will not be exposed to external stakeholders or customers. The technology stack choice is entirely up to you.
+You are tasked with building an internal tool (without external stakeholders or customers) for managing hierarchical categories. Digital content that we provide to the user gets tagged with these categories. This enables us to provide personalised content which matches a user's interests.
+We have provided you with a database to get you started, and we would like you to build the API and UI pieces to complete the tool.
 
-## Categories
+### Understanding the categories logic
 
-Our categories relate to each other such that more general categories like `sport` can have more specific children categories like `football` which may in turn have a child category of `the world cup` which is even more specific.
+Our categories relate to each other in a way that allows a Parent category like `Sport` to have more specific child categories such as `Football`. This can granulate further in that this may also have a child category of `World Cup`, which is even more specific.
 
-`(the-world-cup) -chid-of-> (football) -child-of-> (sport)`
+For Example:
+Bottom up:
+`World Cup -> Football -> Sport`
+Top Down:
+`Sport -> Football -> World Cup`
 
 ## Task Requirements
 
+The technology stack choice is entirely up to you. We have offered some suggestions and tips in the below sections and this is all that they are :)
+
 ### Core Functionality
-Build a full-stack application that allows users to:
+We'd like you to build a full-stack application which allows users to:
 1. **View the categories**
-2. **Modify category relationships** by changing parent-child linkages between categories
+2. **Modify category relationships** by changing the parent -> child linkages between categories
+
+### Technical Constraints
+- Use any frontend and backend technologies that you're comfortable with. Make sure to include the setup instructions for us to review your solution in a README file. 
+- We'd love to see and hear what tools you think would be best for a company internal tool like this. Do feel free to add an additional README with this information if you would like to. 
+
+## AI Tool Usage
+
+We **encourage** you to use AI tools (ChatGPT, Claude, Copilot, etc.) to complete this task. However, you **MUST understand** the code you submit
+
+## Getting Started
 
 ### Database Structure
 We've provided a PostgreSQL database with a `categories` table containing:
@@ -25,47 +45,6 @@ We've provided a PostgreSQL database with a `categories` table containing:
 - `name` (VARCHAR, UNIQUE)
 - `description` (TEXT)
 - `parent_id` (INTEGER, NULLABLE, foreign key referencing categories.id)
-
-### Technical Constraints
-- Use any frontend and backend technologies you're comfortable with
-    - We'd love to see and hear what tools you think would be best for a company internal tool like this
-
-## AI Tool Usage
-
-We **encourage** you to use AI tools (ChatGPT, Claude, Copilot, etc.) to complete this task. However:
-
-- You must **understand** the code you submit
-- Include documentation showing **how you used AI**, such as:
-    - Key prompts you used
-    - Notes on how you guided the AI
-    - Full conversation logs with the AI (if practical)
-
-Create a file called `AI_USAGE.md` documenting your AI interaction approach.
-
-## Submission Requirements
-
-### Code Delivery
-- **DO NOT** push your solution to our public GitHub repository
-- Feel free to create either your own repository as a fork or **ZIP** your entire project directory and**EMAIL** the file to the recruiter
-
-### Documentation Requirements
-Your submission must include:
-
-1. **README.md** with:
-    - Clear setup instructions (assume we have a clean machine)
-        - Provide **complete setup instructions** - don't assume we have your tools installed
-        - **Bonus points** for easy setup (Docker, one-command setup, etc.)
-        - Include any dependencies, environment variables, or configuration needed
-    - How to run the application
-    - Technology choices and reasoning
-    - Any assumptions made
-
-2. **AI_USAGE.md** with:
-    - Documentation of AI tool usage
-    - Key prompts or conversation excerpts
-    - How you validated AI-generated code
-
-## Getting Started
 
 ### Database Setup
 1. Ensure Docker and Docker Compose are installed:
@@ -88,6 +67,32 @@ docker exec categories_postgres psql -U developer -d categories_db -c "SELECT * 
 
 # Interactive psql session (use -it flags for interactive mode)
 docker exec -it categories_postgres psql -U developer -d categories_db
+
+
+## Submission Requirements
+
+### Code Delivery
+- **DO NOT** push your solution to our public GitHub repository
+- Feel free to create either your own repository as a fork or **ZIP** your entire project directory and**EMAIL** the file to our recruiter
+
+### Documentation Requirements
+Your submission must include:
+
+1. A **README.md** file with:
+    - Clear setup instructions (assume we have a clean machine)
+        - Provide **complete setup instructions** - don't assume we have your tools installed
+        - Try to make your setup as easy to use as possible (Docker, one-command setup, etc.)
+        - Include any dependencies, environment variables, or configuration needed
+    - How to run the application
+    - Technology choices and reasoning
+    - Any assumptions made
+
+2. If you have decided to use AI, a **AI_USAGE.md** file with:
+    - The key prompts which you used
+    - Notes on how you guided the AI
+    - Details of how you validated the AI code
+
+
 ```
 
 ## Time Expectation

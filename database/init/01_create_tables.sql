@@ -55,12 +55,6 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- Create trigger to enforce circular reference prevention
-CREATE TRIGGER trigger_prevent_circular_reference
-    BEFORE INSERT OR UPDATE ON categories
-    FOR EACH ROW
-    EXECUTE FUNCTION prevent_circular_reference();
-
 -- Create a function to update the updated_at timestamp
 CREATE OR REPLACE FUNCTION update_updated_at()
 RETURNS TRIGGER AS $$

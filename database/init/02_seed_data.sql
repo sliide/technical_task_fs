@@ -34,6 +34,7 @@ INSERT INTO categories (name, description, parent_id) VALUES
 
 -- Display the hierarchical structure for verification
 -- This query will show the tree structure with levels
+CREATE OR REPLACE VIEW category_hierarchy AS
 WITH RECURSIVE category_tree AS (
     -- Base case: root categories (no parent)
     SELECT 
@@ -42,7 +43,7 @@ WITH RECURSIVE category_tree AS (
         description,
         parent_id,
         0 as level,
-        name as path
+        CAST(name AS TEXT) as path
     FROM categories 
     WHERE parent_id IS NULL
     

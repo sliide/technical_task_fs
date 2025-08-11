@@ -34,3 +34,5 @@ pnpm-debug.log*
 backend
 frontend
 CLAUDE.md
+AI_USAGE.md
+README.md

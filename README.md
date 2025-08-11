@@ -91,9 +91,9 @@ Your submission must include:
 
 3. **OPTIONAL -** If time permits, we'd love to hear what tools you think would be best for an internal tool like this. Feel free to create a markdown file with this information if you would like to.
 
-## Time Expectation
+## Expectation
 
-We estimate that this task should take approximately **2-3 hours** depending on your experience level and technology choices. Focus on creating a working solution rather than a perfect one. The UI does not have to be aesthetically pleasing, it can be functional (we all know that less better code > loads of worse code)
+Focus on creating a working solution rather than a perfect one. The UI does not have to be aesthetically pleasing, it can be functional (we all know that less better code > loads of worse code). 
 
 ## Questions?
 

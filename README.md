@@ -30,8 +30,7 @@ We'd like you to build a full-stack application which allows users to:
 2. **Modify category relationships** by changing the parent -> child linkages between categories
 
 ### Technical Constraints
-- Use any frontend and backend technologies that you're comfortable with. Make sure to include the setup instructions for us to review your solution in a README file. 
-- We'd love to see and hear what tools you think would be best for a company internal tool like this. Do feel free to add an additional README with this information if you would like to. 
+- Use any frontend and backend technologies that you're comfortable with. Make sure to include the setup instructions for us to review your solution in a README file.
 
 ## AI Tool Usage
 
@@ -67,7 +66,7 @@ docker exec categories_postgres psql -U developer -d categories_db -c "SELECT * 
 
 # Interactive psql session (use -it flags for interactive mode)
 docker exec -it categories_postgres psql -U developer -d categories_db
-
+```
 
 ## Submission Requirements
 
@@ -92,15 +91,19 @@ Your submission must include:
     - Notes on how you guided the AI
     - Details of how you validated the AI code
 
-
-```
+3. **OPTIONAL -** If time permits, we'd love to hear what tools you think would be best for an internal tool like this. Feel free to create a markdown file with this information if you would like to.
 
 ## Time Expectation
 
-This task should take approximately **2-3 hours** depending on your experience level and technology choices. Focus on creating a working solution rather than a perfect one (we all know that less better code > loads of worse code)
+We estimate that this task should take approximately **2-3 hours** depending on your experience level and technology choices. Focus on creating a working solution rather than a perfect one. The UI does not have to be aesthetically pleasing, it can be functional (we all know that less better code > loads of worse code)
 
 ## Questions?
 
-If you have any clarifications needed about the requirements, please reach out to your recruiter contact.
+If you have any clarifications about this task and its requirements then please do get in touch with us via our recruiter
+
+## Next Steps
+Once we have received your task along with any other documentation which you feel is necessary for your submission, we will review it. 
+
+If we like what we see, we'll invite you to join us on a call for a discussion where we’ll ask you to go through your task, explaining any decisions that you've made.
 
 Good luck!

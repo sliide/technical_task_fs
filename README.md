@@ -19,6 +19,8 @@ Bottom up:
 Top Down:
 `Sport -> Football -> World Cup`
 
+Another good reference is Google's content categories. [See here.](https://cloud.google.com/natural-language/docs/categories#categories_version_2)
+
 ## Task Requirements
 
 The technology stack choice is entirely up to you. We have offered some suggestions and tips in the below sections and this is all that they are :)
@@ -83,13 +85,12 @@ Your submission must include:
         - Include any dependencies, environment variables, or configuration needed
     - Details of how to run the application
     - Your technology choices and reasoning. This can also include assumptions which you have made
+    - Comments about further work that would be required to turn this code from "proof of concept" quality to production ready code 
 
 2. If you have decided to use AI, a **AI_USAGE.md** file with:
     - The key prompts which you used
     - Notes on how you guided the AI
     - Details of how you validated the AI code
-
-3. **OPTIONAL -** If time permits, we'd love to hear what tools you think would be best for an internal tool like this. Feel free to create a markdown file with this information if you would like to.
 
 ## Expectation
 

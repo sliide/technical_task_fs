@@ -23,7 +23,7 @@ Another good reference is Google's content categories. [See here.](https://cloud
 
 ## Task Requirements
 
-The technology stack choice is entirely up to you. We have offered some suggestions and tips in the below sections and this is all that they are :)
+The technology stack choice is entirely up to you. Feel free to use any frontend and backend technologies that you're comfortable with, including any libraries or third party package you like :)
 
 ### Core Functionality
 We'd like you to build a full-stack application which allows users to:
